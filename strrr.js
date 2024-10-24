@@ -23,21 +23,21 @@ function inventoryList() {
 	}
 
 	const getList = () => {
-	 // console.log(items)
+	  console.log(items)
 		return items
 	}
 
-  // getList()
-  // add('Vladimir')
-  // getList()
-  // add('Goran')
-  // getList()
-  // remove('Vladimir')
-  // getList()
-  // add('Gordana')
-  // getList()
-  // add('Vladimir')
-  // getList()
+  getList()
+  add('Vladimir')
+  getList()
+  add('Goran')
+  getList()
+  remove('Vladimir')
+  getList()
+  add('Gordana')
+  getList()
+  add('Vladimir')
+  getList()
 
 	return {add, remove, getList}
 

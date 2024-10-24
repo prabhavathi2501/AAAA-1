@@ -89,11 +89,12 @@
 
 // function duponce(array){
 //     let res=[];
-//     for(let i=0;i<array.length;i++){
+//     for( i=0;i<array.length;i++){
 //         if(array[i]==array[i+1]){
 //            console.log(array[i])
 //         }
 //     }
+// 	return array
 
 // }
 // let input=[2, 13, 4, 4, 2, 13, 13, 4, 4, 5, 5, 6, 6, 7, 5, 32, 13, 4, 5,2,2];
@@ -134,18 +135,19 @@
 // console.log(remov("call 911"));//"cal 91
 
 
-function duplicate(arr){
-    let res=arr.sort();
-    for(var i=0;i<res.length;i++){
-        if(res[i]==res[i+1]){
-            console.log(res[i])
-        }
-    }
-    return res
+// function duplicate(arr){
+//     let res=arr.sort();
+//     for(var i=0;i<res.length;i++){
+//         if(res[i]==res[i+1]){
+//             console.log(res[i])
+//         }
+//     }
+//     return res
 
-}
-let input=[1,1,2,2,5,7,7,5,8,89];
-duplicate(input)
+// }
+// let input=[1,1,2,2,5,7,7,5,8,89];
+// duplicate(input)
+
 
 //chhunk array
 
@@ -159,30 +161,30 @@ duplicate(input)
 // }
 // console.log(dup(arr2));
 
-function revstr(str){
-	var word=str.split(" ");
-	var res=[];
-	//console.log(word)
-	word.map((word)=>{
-		const noofletter=word.split("")
-		// console.log(noofletter)
-		if(noofletter.length > 5)
-			{
-				const result=noofletter.reverse().join("")
-                //console.log(result)
-			   res.push(result)
-			}
-			else{
-				res.push(noofletter.join(""))
-			}
+// function revstr(str){
+// 	var word=str.split(" ");
+// 	var res=[];
+// 	//console.log(word)
+// 	word.map((word)=>{
+// 		const noofletter=word.split("")
+// 		// console.log(noofletter)
+// 		if(noofletter.length > 5)
+// 			{
+// 				const result=noofletter.reverse().join("")
+//                 //console.log(result)
+// 			   res.push(result)
+// 			}
+// 			else{
+// 				res.push(noofletter.join(""))
+// 			}
 			
-	});
+// 	});
 	
-	return res.join(" ")
-}
-console.log(revstr("Revesttr"));
-console.log(revstr("this is a fullstack developer"));
-console.log(revstr("the is dog"));
+// 	return res.join(" ")
+// }
+// console.log(revstr("Revesttr"));
+// console.log(revstr("this is a fullstack developer"));
+// console.log(revstr("the is dog"));
 
 
 // function reversestr(str){

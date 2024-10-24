@@ -130,30 +130,30 @@
 
 // }
 // console.log(flatarr(arr))
-// const input={ a: 1, b: { c: 2 }, d: { e: { f: 3 } },g:{h:7} };
-// const objlist=(input)=>{
-//    let result=[];
-//     for(let val in input){
-//         // if(!input.hasOwnProperty(val)){jr
-//         //     continue
-//         // }
-//         if(typeof input[val]==="object"&&!Array.isArray(input[val])){
-//             const subflatingobj=objlist(input[val]);
-//             for(let subobj in subflatingobj){
-//                 result[val+ " "+subobj]=subflatingobj[subobj]
-//             }
+const input={ a: 1, b: { c: 2 }, d: { e: { f: 3 } },g:{h:7} };
+const objlist=(input)=>{
+   let result=[];
+    for(let val in input){
+        // if(!input.hasOwnProperty(val)){jr
+        //     continue
+        // }
+        if(typeof input[val]==="object"&&!Array.isArray(input[val])){
+            const subflatingobj=objlist(input[val]);
+            for(let subobj in subflatingobj){
+                result[val+ " "+subobj]=subflatingobj[subobj]
+            }
             
-//         }
+        }
        
-//         else{
-//             result[val]=input[val]
+        else{
+            result[val]=input[val]
             
-//         }
-//     }
-//     return result
+        }
+    }
+    return result
 
-//     }
-//     console.log(objlist(input))
+    }
+    console.log(objlist(input))
  
 // function miss(arr){
 //     let sum=0;
@@ -250,7 +250,7 @@
 
 // }
 // console.log(fact(3))
-const input=[1,1,"n","m","n",4,8,9,40];
+//const input=[1,1,"n","m","n",4,8,9,40];
 // function dup(input){
 //     return[...new Set(input)]
 
